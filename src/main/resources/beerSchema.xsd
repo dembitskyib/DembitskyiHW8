@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema elementFormDefault="qualified"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name="beerType">
+		<xsd:restriction base="xsd:string">
+			<xs:enumeration value="light" />
+			<xs:enumeration value="dark" />
+			<xs:enumeration value="ale" />
+			<xs:enumeration value="lager" />
+		</xsd:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="percent">
+		<xs:restriction base="xsd:decimal">
+			<xs:minInclusive value="0" />
+			<xs:maxInclusive value="100" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="beer">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="beerSort" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xsd:string" />
+							<xs:element name="type" type="beerType" />
+							<xs:element name="al" type="xs:boolean" />
+							<xs:element name="manufacturer" type="xsd:string" />
+							<xsd:element name="ingredients">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="ingredient"
+											type="xsd:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xsd:element>
+							<xs:element name="chars">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element minOccurs="0" name="alcoholFraction"
+											type="percent" />
+										<xs:element name="transparency" type="percent" />
+										<xs:element name="filtered" type="xsd:boolean" />
+										<xs:element name="nutritionalValue" type="xsd:decimal" />
+										<xs:element name="spillMethod">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="volume" type="xsd:decimal" />
+													<xs:element name="material" type="xsd:string" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xsd:schema>

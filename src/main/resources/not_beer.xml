@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<not_beer>
+	<beerSort>
+		<name>Toppling Goliath Kentucky Brunch</name>
+		<type>ale</type>
+		<al>true</al>
+		<manufacturer>Toppling Goliath Brewing Company</manufacturer>
+		<ingredients>
+			<ingredient>water</ingredient>
+			<ingredient>grain</ingredient>
+			<ingredient>hop</ingredient>
+			<ingredient>sugar</ingredient>
+		</ingredients>
+		<chars>
+			<alcoholFraction>12</alcoholFraction>
+			<transparency>73</transparency>
+			<filtered>true</filtered>
+			<nutritionalValue>500</nutritionalValue>
+			<spillMethod>
+				<volume>0.7</volume>
+				<material>glass</material>
+			</spillMethod>
+		</chars>
+	</beerSort>
+
+	<beerSort>
+		<name>Westvleteren 12 (XII)</name>
+		<type>dark</type>
+		<al>true</al>
+		<manufacturer>Westvleteren Abdij St. Sixtus</manufacturer>
+		<ingredients>
+			<ingredient>water</ingredient>
+			<ingredient>westmalle yeast</ingredient>
+			<ingredient>malt</ingredient>
+			<ingredient>local hops</ingredient>
+			<ingredient>sugar</ingredient>
+		</ingredients>
+		<chars>
+			<alcoholFraction>10.2</alcoholFraction>
+			<transparency>30</transparency>
+			<filtered>false</filtered>
+			<nutritionalValue>600</nutritionalValue>
+			<spillMethod>
+				<volume>0.33</volume>
+				<material>glass</material>
+			</spillMethod>
+		</chars>
+	</beerSort>
+	<beerSort>
+		<name>Bell's Black Note Stout</name>
+		<type>dark</type>
+		<al>true</al>
+		<manufacturer>Bell's Brewery</manufacturer>
+		<ingredients>
+			<ingredient>two-row malt</ingredient>
+			<ingredient>black malt</ingredient>
+			<ingredient>roasted barley</ingredient>
+			<ingredient>centennial hops</ingredient>
+			<ingredient>calcium chloride</ingredient>
+		</ingredients>
+		<chars>
+			<alcoholFraction>11.2</alcoholFraction>
+			<transparency>32</transparency>
+			<filtered>true</filtered>
+			<nutritionalValue>354</nutritionalValue>
+			<spillMethod>
+				<volume>0.7</volume>
+				<material>glass</material>
+			</spillMethod>
+		</chars>
+	</beerSort>
+</not_beer>
+
